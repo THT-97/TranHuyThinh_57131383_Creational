@@ -36,17 +36,17 @@ public class HoaDon {
         ArrayList<CTDH> chiTiet;
 
         public Builder() {
+            this.header = new HoaDonHeader();
             this.chiTiet = new ArrayList<>();
         }
         
         public Builder addHeader(String header){
-            this.header = new HoaDonHeader(header);
+            this.header.setHeader(header);
             return this;
         }
         
         public Builder addCTDH(String chiTiet){
-            CTDH ct = new CTDH(chiTiet);
-            this.chiTiet.add(ct);
+            this.chiTiet.add(new CTDH(chiTiet));
             return this;
         }
         

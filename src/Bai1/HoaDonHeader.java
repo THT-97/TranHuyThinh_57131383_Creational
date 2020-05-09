@@ -12,10 +12,14 @@ package Bai1;
 public class HoaDonHeader {
     String header;
 
-    public HoaDonHeader(String header) {
-        this.header = header;
+    public HoaDonHeader() {
+        header = "";
     }
 
+    public void setHeader(String header) {
+        this.header = header;
+    }
+    
     @Override
     public String toString() {
         return header + "\n";
