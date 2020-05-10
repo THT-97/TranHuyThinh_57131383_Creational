@@ -5,8 +5,6 @@
  */
 package Bai3.Shapes;
 
-import Bai3.Shapes.Shape;
-
 /**
  *
  * @author TranHuyThinh

@@ -16,9 +16,21 @@ public abstract class Shape {
     
     public abstract String draw();
 
+    public void setBrush(String brush) {
+        this.brush = brush;
+    }
+
+    public void setPaper(String paper) {
+        this.paper = paper;
+    }
+
+    public void setFrame(String frame) {
+        this.frame = frame;
+    }
+
     @Override
     public String toString() {
-        return draw();
+        return brush +". " + paper + ". " + frame + ". " + draw();
     }
     
 }
