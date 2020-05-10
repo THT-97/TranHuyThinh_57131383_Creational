@@ -10,7 +10,17 @@ package Bai3.Shapes;
  * @author TranHuyThinh
  */
 public class Circle extends Shape{
+    
+    private static Circle shape;
 
+    protected Circle() {
+    }
+    
+    public static Circle createInstance(){
+        if(shape == null) shape = new Circle();
+        return shape;
+    }
+    
     @Override
     public String draw() {
         return "Hinh tron";

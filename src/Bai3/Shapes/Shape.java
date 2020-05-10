@@ -13,6 +13,12 @@ public abstract class Shape {
     private String brush;
     private String paper;
     private String frame;
+
+    public Shape() {
+        brush = "But chi";
+        paper = "Giay A4";
+        frame = "Khung Go";
+    }
     
     public abstract String draw();
 

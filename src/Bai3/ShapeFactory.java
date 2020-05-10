@@ -18,9 +18,9 @@ import Bai3.Shapes.Triangle;
 public class ShapeFactory {
     public Shape createShape(ShapeType shapetype){
         switch(shapetype){
-            case Triangle: return new Triangle();
-            case Rectangle: return new Rectangle();
-            case Circle: return new Circle();
+            case Triangle: return Triangle.createInstance();
+            case Rectangle: return Rectangle.createInstance();
+            case Circle: return Circle.createInstance();
         }
         return null;
     }

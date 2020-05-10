@@ -11,6 +11,16 @@ package Bai3.Shapes;
  */
 public class Rectangle extends Shape{
 
+    private static Rectangle shape;
+
+    protected Rectangle() {
+    }
+    
+    public static Rectangle createInstance(){
+        if(shape == null) shape = new Rectangle();
+        return shape;
+    }
+    
     @Override
     public String draw() {
         return "Hinh tu giac";

@@ -23,9 +23,24 @@ public class main3 {
         Shape triangle = sFactory.createShape(ShapeType.Triangle);
         Shape rectangle = sFactory.createShape(ShapeType.Rectangle);
         
-        System.out.println(circle.draw());
-        System.out.println(triangle.draw());
-        System.out.println(rectangle.draw());
+        System.out.println("Factory: ");
+        System.out.println(circle.toString());
+        System.out.println(triangle.toString());
+        System.out.println(rectangle.toString());
+        
+        //Singleton test
+        System.out.println("\n" + "Singleton test:");
+        Shape circle2 = sFactory.createShape(ShapeType.Circle);
+        Shape triangle2 = sFactory.createShape(ShapeType.Triangle);
+        Shape recShape2 = sFactory.createShape(ShapeType.Rectangle);
+        
+        circle2.setPaper("Giay A0");
+        triangle2.setBrush("But muc");
+        recShape2.setFrame("Khung Sat");
+        
+        System.out.println(circle.toString());
+        System.out.println(triangle.toString());
+        System.out.println(rectangle.toString());
     }
     
 }
