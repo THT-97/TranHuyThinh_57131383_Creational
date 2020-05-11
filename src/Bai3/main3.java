@@ -18,29 +18,29 @@ public class main3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ShapeFactory sFactory = new ShapeFactory();
-        Shape circle = sFactory.createShape(ShapeType.Circle);
-        Shape triangle = sFactory.createShape(ShapeType.Triangle);
-        Shape rectangle = sFactory.createShape(ShapeType.Rectangle);
+        ShapeFactory Factory = new ShapeFactory();
+        Shape Circ = Factory.createShape(ShapeType.Circle);
+        Shape Tri = Factory.createShape(ShapeType.Triangle);
+        Shape Rect = Factory.createShape(ShapeType.Rectangle);
         
         System.out.println("Factory: ");
-        System.out.println(circle.toString());
-        System.out.println(triangle.toString());
-        System.out.println(rectangle.toString());
+        System.out.println(Circ.toString());
+        System.out.println(Tri.toString());
+        System.out.println(Rect.toString());
         
         //Singleton test
         System.out.println("\n" + "Singleton test:");
-        Shape circle2 = sFactory.createShape(ShapeType.Circle);
-        Shape triangle2 = sFactory.createShape(ShapeType.Triangle);
-        Shape recShape2 = sFactory.createShape(ShapeType.Rectangle);
+        Shape Circ2 = Factory.createShape(ShapeType.Circle);
+        Shape Tri2 = Factory.createShape(ShapeType.Triangle);
+        Shape Rect2 = Factory.createShape(ShapeType.Rectangle);
         
-        circle2.setPaper("Giay A0");
-        triangle2.setBrush("But muc");
-        recShape2.setFrame("Khung Sat");
+        Circ2.setPaper("Giay A0");
+        Tri2.setBrush("But muc");
+        Rect2.setFrame("Khung Sat");
         
-        System.out.println(circle.toString());
-        System.out.println(triangle.toString());
-        System.out.println(rectangle.toString());
+        System.out.println(Circ.toString());
+        System.out.println(Tri.toString());
+        System.out.println(Rect.toString());
     }
     
 }
