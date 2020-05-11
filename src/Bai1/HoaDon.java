@@ -36,8 +36,8 @@ public class HoaDon {
         ArrayList<CTDH> chiTiet;
 
         public Builder() {
-            this.header = new HoaDonHeader();
-            this.chiTiet = new ArrayList<>();
+            header = new HoaDonHeader();
+            chiTiet = new ArrayList<>();
         }
         
         public Builder addHeader(String header){

@@ -25,7 +25,7 @@ public class MyStringBuilder {
         String str;
 
         public Builder() {
-            this.str = "";
+            str = "";
         }
         
         public Builder addString(String s){

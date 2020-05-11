@@ -15,7 +15,7 @@ public class main2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MyStringBuilder chuoi = new MyStringBuilder.Builder()
+        MyStringBuilder Chuoi = new MyStringBuilder.Builder()
                                     .addString("Nhiet do: ")
                                     .addFloat(25.995f)
                                     .addString("C" + "\t")
@@ -23,7 +23,7 @@ public class main2 {
                                     .addBool(true)
                                     .build();
         
-        System.out.println(chuoi.toString());
+        System.out.println(Chuoi.toString());
     }
     
 }

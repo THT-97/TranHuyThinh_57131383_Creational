@@ -16,14 +16,14 @@ public class main1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        HoaDon hd = new HoaDon.Builder()
+        HoaDon Bill = new HoaDon.Builder()
                         .addHeader("HD1")
                         .addCTDH("CT1")
                         .addCTDH("CT2")
                         .addCTDH("CT3")
                         .build();
         
-        System.out.println(hd.toString());
+        System.out.println(Bill.toString());
     }
     
 }
